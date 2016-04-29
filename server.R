@@ -44,7 +44,7 @@ shinyServer(
         output$average <- renderPrint({median(dataset$Speed)})
       }
       
-      output$averagedSpeedsByColor <- renderDataTable(tapply(data$Speed, data$Color, mean))
+      #output$averagedSpeedsByColor <- renderDataTable(tapply(data$Speed, data$Color, mean))
     })
 
 })
