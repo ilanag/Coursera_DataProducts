@@ -20,10 +20,8 @@ shinyUI(fluidPage(
              
 
              h4('The Average Speed by Sex Selected is: '),
-             verbatimTextOutput("average"),
+             verbatimTextOutput("average")
              
-             h4('The Average Speed by Color for the Selected Sex is:'),
-             dataTableOutput('averagedSpeedsByColor')
              ),
     
     tabPanel("About",
