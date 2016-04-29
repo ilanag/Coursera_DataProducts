@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pigeon Racing Results by Sex</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Pigeon Racing Results by Sex">
+  <meta name="author" content="Ilana G.">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Pigeon Racing Results by Sex</h1>
+    <h2>Observing Differing Results by Color</h2>
+    <p>Ilana G.<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Pigeon racing is a very niche sport in the US</h3>
+
+<p>Hundreds of races occur every year, with each race being incredibly competitive. The races are monitored and tracked by the American Pigeon Racing Union (more information can be found here: <a href="http://www.pigeon.org/">http://www.pigeon.org/</a>)</p>
+
+<p>Races can be either short or long distances. In either case, however, pigeons can find themselves in dangerous situations, and are subject to the prey birds of North America. </p>
+
+<p>This app explores which birds are most successful at finishing one specific race. Data can be observed by pigeon gender, and additionally broken down by color. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Breakout by Pigeon Gender</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are 9 male pigeons in this dataset, and 391 female pigeons. The average speed for a male pigeon was 128.0361111 and the average speed for a female pigeon was 128.7261867. </p>
+
+<p>Because there are so few males in this particular race, gender is not a good measure for analysis. However, the lack of males could also indicate the training preference of the participants, or to some other reason why females are so heavily favored. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Breakout by Pigeon Color</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>When looking by color, there does not appear to be much deviation in average speed. </p>
+
+<pre><code class="r">#dataset &lt;- read.csv(&quot;data/pigeon-racing.csv&quot;)
+tapply(dataset$Speed, dataset$Color, mean)
+</code></pre>
+
+<pre><code>##       BB     BBPD     BBPI     BBSP     BBWF       BC      BCH     BCSP 
+## 124.0063 153.5310 120.1236 136.3513 130.9791 135.3931  91.4760  97.9145 
+##     BCWF     BKWF     BLCK      BLK       DC     DCWF     GRIZ     GRZL 
+## 140.5683  99.4260 157.5410 125.7622 123.5477 137.2612 125.8385 161.8390 
+##     OPAL     OPWF     PENC       RC     RCSP     RCWF      RED      SIL 
+## 118.3735 146.0780 119.2740 128.6933 159.4440 104.2650 147.9162 107.1542 
+##     SILV     SIWF     WGRZ     WHGR      WHT 
+## 131.7518 163.5690 134.2665 152.5130 114.4720
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Other Observations</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Ideas for Future Use</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This app uses the data available from only one race. In the future, exploring the breakdown of finishers, speed, and place by location of race could provide more robust analysis.</p>
+
+<p>In general, pigeon racing is something many people are not familiar with. Prior to beginning this project, I was unaware it existed. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Breakout by Pigeon Gender'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Breakout by Pigeon Color'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Other Observations'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Ideas for Future Use'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='NA'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
